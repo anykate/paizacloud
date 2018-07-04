@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Aniket Aryamane">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    {% load static %}
+
+    <!-- Link to favicon.ico file -->
+    <link rel="shortcut icon" href="{% static 'anapp/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="">
+
+    <!-- Link to Bootstrap css (minified version) file -->
+    <link rel="stylesheet" href="{% static 'anapp/css/vendor/bootstrap.min.css' %}" type="text/css">
+
+    <!-- Link to your css file -->
+    <link rel="stylesheet" href="{% static 'anapp/css/main.css' %}" type="text/css">
+
+</head>
+
+<body>
+{% block content %}{% endblock %}
+
+<!-- do not forget download jquery (http://jquery.com/download/)-->
+<script src="{% static 'anapp/js/vendor/jquery-3.3.1.slim.min.js' %}"></script>
+<!-- do not forget download popper.js (https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js) -->
+<script src="{% static 'anapp/js/vendor/popper.min.js' %}"></script>
+<script src="{% static 'anapp/js/vendor/bootstrap.min.js' %}"></script>
+<!-- Link to your js file -->
+<script src="{% static 'anapp/js/main.js' %}"></script>
+</body>
+</html>
